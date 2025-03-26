@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人导航站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            font-size: 1rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f5f7fa;
+        }
+        
+        .category {
+            margin-bottom: 20px;
+        }
+        
+        .category-title {
+            font-size: 1.2rem;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 15px;
+        }
+        
+        .link-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            background: #fff;
+        }
+        
+        .link-card a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 500;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .link-card a:hover {
+            color: #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .links {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+            
+            .section {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>个人导航站</h1>
+            <p class="description">收集独立开发和出海必备的优质工具网站，助力您的项目更顺利地推进</p>
+        </header>
+        
+        <main>
+            <div class="section">
+                <h2 class="section-title">一、需求收集与关键词调研</h2>
+                <div class="category">
+                    <h3 class="category-title">谷歌下拉词与需求调研</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://www.searchsuggest.tips/?keyword=" target="_blank">Search Suggest Tips</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://www.toolify.ai/Best-AI-Tools-revenue" target="_blank">Toolify AI</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://theresanaiforthat.com/requests" target="_blank">There's An AI For That</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://ahrefs.com/keyword-difficulty" target="_blank">Ahrefs 关键词难度查询</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">二、网站搭建必备工具</h2>
+                
+                <div class="category">
+                    <h3 class="category-title">域名查询</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://leandomainsearch.com/" target="_blank">Lean Domain Search</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://query.domains/" target="_blank">Query Domains</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://instantdomainsearch.com/?q=" target="_blank">Instant Domain Search</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title">域名注册</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://porkbun.com" target="_blank">Porkbun</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://spaceship.com" target="_blank">Spaceship</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://namecheap.com" target="_blank">Namecheap</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title">代码与网站托管</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://github.com" target="_blank">GitHub</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://cloudflare.com" target="_blank">Cloudflare</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://vercel.com" target="_blank">Vercel</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title">数据后台</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://www.bing.com/webmasters/submiturl" target="_blank">Bing Webmaster</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://analytics.google.com/analytics/web/#" target="_blank">Google Analytics</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="https://search.google.com/search-console/about" target="_blank">Google Search Console</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">三、竞品调研工具</h2>
+                
+                <div class="category">
+                    <h3 class="category-title">流量与关键词分析</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://aitdk.com" target="_blank">AITDK</a>
+                        </div>
+                        <div class="link-card">
+                            <a href="#" target="_blank">AISEOToch AiGon</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title">外链检查</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://ahrefs.com/free-seo-tools" target="_blank">Ahrefs 免费SEO工具</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title">关键词分析</h3>
+                    <div class="links">
+                        <div class="link-card">
+                            <a href="https://semrush.com" target="_blank">SEMrush</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2024 个人导航站 | 精选独立开发者必备工具</p>
+        </footer>
+    </div>
+</body>
+</html> 
